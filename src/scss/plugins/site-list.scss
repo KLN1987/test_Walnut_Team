@@ -1,0 +1,23 @@
+.site-list__item {
+  width: 100%;
+  padding: 13px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 30px;
+}
+
+.site-list__item:hover {
+  color: #ffe640;
+}
+
+@media (min-width: 1290px) {
+  .site-list__item {
+    color: #ffffff;
+    font-size: 16px;
+    margin-right: 84px;
+    padding: 0;
+    width: auto;
+    margin-bottom: 10px;
+  }
+}

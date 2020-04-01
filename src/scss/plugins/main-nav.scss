@@ -1,0 +1,206 @@
+@media (max-width: 1289px) {
+  .main-nav--closed .main-nav__btn {
+    position: absolute;
+    top: 88px;
+    left: 0;
+    width: 24px;
+    height: 15px;
+    background-color: #ffffff;
+    border: none;
+    z-index: 2;
+    outline: none;
+  }
+  
+  .main-nav--closed .main-nav__btn::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .main-nav--closed .main-nav__btn::after {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .main-nav--closed .main-nav__wrapper {
+    display: none;
+  }
+  
+  .main-nav--opened .main-nav__btn {
+    position: absolute;
+    top: 22px;
+    left: 265px;
+    width: 23px;
+    height: 22px;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    z-index: 7;
+  }
+  
+  .main-nav--opened .main-nav__btn::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 24px;
+    width: 17px;
+    height: 4px;
+    background-color: #555555;
+    transform: rotate(45deg);
+  }
+  
+  .main-nav--opened .main-nav__btn::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 24px;
+    width: 17px;
+    height: 4px;
+    background-color: #555555;
+    transform: rotate(-45deg);
+  }
+  
+  .main-nav--opened .main-nav__wrapper {
+    background-color: #ffffff;
+    width: 310px;
+    height: 98%;
+    position: absolute;
+    top: 0;
+    left: -6%;
+    z-index: 5;
+  }
+  
+  .main-nav--opened .main-nav__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+  }
+  
+  .main-nav--opened .main-nav__additional {
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+    padding: 27px;
+    padding-top: 14px;
+    padding-bottom: 22px;
+  }
+  
+  .main-nav--opened .main-nav__additional a {
+    color: #50b1d7;
+    border-bottom: 2px dotted #50b1d7;
+  }
+  
+  .main-nav--opened .main-nav__additional .main-nav__slogan {
+    margin-bottom: 18px;
+  }
+  
+  .main-nav--opened .main-nav__additional .main-nav__offer {
+    margin-bottom: 25px;
+  }
+  
+  .main-nav--opened .main-nav__writein {
+    position: relative;
+    text-align: left;
+    border-radius: 10px;
+    background-color: #313131;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    width: 252px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    margin-left: 30px
+  }
+  
+  .main-nav--opened .main-nav__writein::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 33px;
+    width: 97px;
+    height: 26px;
+    background: url('../img/whatsapp.png') no-repeat 0 0;
+  }
+  
+  .main-nav--opened .main-nav__writein:hover {
+    background-color: #484848;
+  }
+  
+  .main-nav__callback a:hover,
+  .main-nav__offer a:hover {
+    color: #ffe640;
+    border-bottom: 2px dotted #ffe640;
+  }
+}
+
+@media (min-width: 768px) {
+  @media (max-width: 1289px) {
+
+    .main-nav--closed .main-nav__btn {
+      top: 44px;
+    }
+
+    .main-nav--opened .main-nav__wrapper {
+     width: 333px;
+      height: 776px;
+    }
+  }
+} 
+
+@media (min-width: 1290px) {
+  .main-nav .main-nav__btn {
+    display: none;
+  }
+
+  .main-nav .main-nav__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 1290px;
+  }
+
+  .main-nav__offer a {
+    color: #ffffff;
+  }
+
+  .main-nav__offer a:hover {
+    color: #ffe640;
+  }
+
+  .main-nav__callback a {
+    color: #50b1d7;
+    border-bottom: 2px dotted #50b1d7;
+  }
+
+  .main-nav__callback a:hover {
+    color: #ffe640;
+    border-bottom: 2px dotted #ffe640;;
+  }
+
+  .main-nav__writein {
+    display: none;
+  }
+
+  .main-nav__additional {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+
+  .main-nav__list {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 53%;
+    margin-left: 341px;
+  }
+}

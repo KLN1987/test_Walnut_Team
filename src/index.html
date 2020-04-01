@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>SNOW ALP</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/montserrat-v14-cyrillic_latin-regular.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/montserrat-v14-cyrillic_latin-500.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/montserrat-v14-cyrillic_latin-600.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/montserrat-v14-cyrillic_latin-700.woff2" as="font" type="font/woff2">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__bg">
+      <div class="page-header__stiky visually-hidden">
+        <div class="page-header__wrapper">
+          <div class="page-header__stiky-btn">
+            <button class="page-header__btn main-nav__btn"><span class="visually-hidden">Меню</span>
+            </button>
+          </div>
+          <a class="page-header__logo">
+            <picture>
+              <img class="page-header__logo-image" src="img/logo.png" width="132" height="27" alt="Логотип компании">
+            </picture>
+          </a>
+          <a class="page-header__call">
+            <picture>
+              <img class="page-header__call-image" src="img/phone-stiky.svg" width="24" height="24"
+                alt="Телефонный звонок">
+            </picture>
+          </a>
+        </div>
+      </div>
+      <div class="page-header__wrapper">
+        <div class="page-header__top">
+          <div class="page-header___logo-wrapper">
+            <a class="page-header__logo">
+              <picture>
+                <img class="page-header__logo-image" src="img/logo.png" width="132" height="27" alt="Логотип компании">
+              </picture>
+            </a>
+            <div class="page-header__activity">Чистка снега и<br>наледи с кровли</div>
+          </div>
+          <div class="page-header__tel">+7 495 <span>335 53 53</span></div>
+          <div class="page-header__navigation">
+            <div class="main-nav main-nav--closed">
+              <button class="main-nav__btn"><span class="visually-hidden">Меню</span>
+              </button>
+              <div class="main-nav__wrapper site-list">
+                <div class="main-nav__list">
+                  <a class="site-list__item" href="#">Цены</a>
+                  <a class="site-list__item" href="#">Преимущества</a>
+                  <a class="site-list__item" href="#">Отзывы</a>
+                  <a class="site-list__item" href="#">Контакты</a>
+                </div>
+                <div class="main-nav__additional">
+                  <p class="main-nav__slogan">Снег и лед могут появится неожидано, <b>поэтому мы работаем 24/7</b></p>
+                  <p class="main-nav__offer">Мы открыты для предложений и идей — <a href="#">hello@snow-alp.ru</a></p>
+                  <p class="main-nav__callback">Мы легко можем перезвонить сами — <a class="callback" href="#">обратный
+                      звонок</a></p>
+                </div>
+                <button class="main-nav__writein">Написать в</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="page-header__description">
+          <h1>Очистка снега с крыш</h1>
+          <p>Промышленными альпинистами от 25 руб/м<span><sup>2</sup></span></p>
+        </section>
+
+        <section class="application">
+          <h2>Оставьте заявку — в течение часа к вам выедет специалист</h2>
+          <form class="form" action="#" method="post">
+            <fieldset class="form__fieldset application__present">
+              <p class="form__fieldset-name">
+                <label class="form__label visually-hidden" for="name"></label>
+                <input class="form__input" type="text" name="name" id="name" required="required"
+                  placeholder="Константин Сыромятников">
+              </p>
+              <p class="form__fieldset-contacts">
+                <label class="form__label visually-hidden" for="phone"></label>
+                <input class="form__input" type="tel" name="tel" id="phone" placeholder="+7 (___) ___-__-__"
+                  required="required">
+              </p>
+              <p class="form__checkbox checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="conset" value="assent" id="agree"
+                  required="required">
+                <label class="checkbox__label form__label" for="agree">Я согласен с <a href="#">политикой
+                    конфиденциальности</a> и даю согласие на обработку персональных данных<span
+                    class="toggle visually-hidden"></span></label>
+              </p>
+            </fieldset>
+            <button class="application__btn" type="submit">Отправить заявку</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </header>
+
+  <div class="stiky-desktope visually-hidden">
+    <div class="stiky-desktope__wrapper">
+      <a class="stiky-desktope__logo">
+        <picture>
+          <img class="stiky-desktope__logo-image" src="img/logo.png" width="132" height="27" alt="Логотип компании">
+        </picture>
+      </a>
+      <div class="stiky-desktope__site-list site-list">
+        <a class="site-list__item" href="#">Цены</a>
+        <a class="site-list__item" href="#">Преимущества</a>
+        <a class="site-list__item" href="#">Отзывы</a>
+        <a class="site-list__item" href="#">Контакты</a>
+      </div>
+      <div class="stiky-desktope__callback main-nav__callback">Мы легко можем перезвонить сами — <a class="callback" href="#">обратный
+          звонок</a></div>
+      <div class="stiky-desktope__tel">+7 495 <span>335 53 53</span></div>
+    </div>
+  </div>
+
+  <div class="popup visually-hidden">
+    <div class="popup__wrapper">
+      <button class="popup__closed"><span class="visually-hidden">Закрыть</span>
+      </button>
+      <h2>Заявка на обратный звонок</h2>
+      <p>Оставьте заявку и мы перезвоним вам в течение 15 минут</p>
+      <form class="form popup__form" action="#" method="post">
+        <fieldset class="form__fieldset popup__present">
+          <p class="form__field-wrapper form__fieldset-name">
+            <label class="form__label visually-hidden" for="name-popup"></label>
+            <input class="form__input" type="text" name="name" id="name-popup" required="required"
+              placeholder="Константин Сыромятников">
+          </p>
+          <p class="form__field-wrapper form__fieldset-contacts">
+            <label class="form__label visually-hidden" for="phone-popup"></label>
+            <input class="form__input popup__input" type="tel" name="tel" id="phone-popup"
+              placeholder="+7 (___) ___-__-__" required="required">
+          </p>
+          <p class="form__checkbox checkbox">
+            <input class="checkbox__input visually-hidden" type="checkbox" name="conset" value="assent" id="agree-popup"
+              required="required">
+            <label class="checkbox__label form__label" for="agree-popup">Я согласен с <a href="#">политикой
+                конфиденциальности</a> и даю согласие на обработку персональных данных<span
+                class="toggle-popup  visually-hidden"></span></label>
+          </p>
+        </fieldset>
+        <button class="application__btn popup__btn" type="submit">Перезвоните мне</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="successfully-sent visually-hidden">
+    <div class="successfully-sent__wrapper popup__wrapper">
+      <button class="successfully-sent__closed popup__closed"><span class="visually-hidden">Закрыть</span></button>
+      <h3>Заявка успешно отправлена!</h3>
+      <p>Спасибо за оставленную заявку, менеджер свяжется с вами в течение 15 минут</p>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/scroll-stiky.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/masked.js"></script>
+  <script src="js/popup.js"></script>
+  <script src="js/invalid.js"></script>
+  <script src="js/invalid-popup.js"></script>
+  <script src="js/main-nav.js"></script>
+  <script src="js/popup.js"></script>
+  <script src="js/successfully-sent.js"></script>
+  <script src="js/checkbox.js"></script>
+  <script src="js/lib.js"></script>
+</body>
+
+
+</html>

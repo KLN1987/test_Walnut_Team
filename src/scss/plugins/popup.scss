@@ -1,0 +1,130 @@
+.popup {
+  max-width: 320px;
+  border-radius: 16px;
+  background-color: #50b1d7;
+  background-image: linear-gradient(-45deg, #1b92c1 0%, #50b1d7 100%);
+  text-align: center;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
+
+.popup__wrapper {
+  width: 290px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.popup__wrapper .checkbox__label a {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.popup__wrapper .checkbox__label a:hover {
+  color: #ffe640;
+  border-bottom: 1px solid #ffe640;
+}
+
+.popup__closed {
+  position: absolute;
+  top: 30px;
+  right: 25px;
+  background-color: #33a0cb;
+}
+
+.popup__closed::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 17px;
+  height: 4px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+}
+
+.popup__closed::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 17px;
+  height: 4px;
+  background-color: #ffffff;
+  transform: rotate(-45deg);
+}
+
+.popup__wrapper h2 {
+  font-size: 30px;
+  line-height: 36px;
+  margin-top: 50px;
+}
+
+.popup__wrapper .application__btn {
+  margin-bottom: 54px;
+  background-color: #313131;
+}
+
+.popup__wrapper .application__btn:hover {
+  background-color: #484848;
+}
+
+.popup__checkbox input[type="checkbox"] + label::after {
+  content: none;
+}
+
+.popup__checkbox input[type="checkbox"]:checked ~ label::after {
+  content: "";
+}
+
+@media (min-width: 768px) {
+  .popup {
+    max-width: 600px;
+  }
+
+  .popup__wrapper {
+    width: 513px;
+  }
+
+  .popup__wrapper h2 {
+    padding-right: 92px;
+    padding-left: 92px;
+  }
+
+  .popup__wrapper p {
+    padding-left: 65px;
+    padding-right: 65px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .popup__form .form__field-wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  .popup__form .form__input {
+    padding-top: 23px;
+    padding-bottom: 23px;
+    font-size: 18px;
+  }
+
+  .popup__form .form__checkbox {
+    padding: 0;
+    margin-left: 37px;
+  }
+
+  .popup__form .checkbox__label {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 33px;
+  }
+
+  .popup__form .form__checkbox label::before {
+    top: 5px;
+    left: -28px;
+  }
+}

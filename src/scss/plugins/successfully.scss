@@ -1,0 +1,51 @@
+.successfully-sent {
+  max-width: 320px;
+  border-radius: 16px;
+  background-color: #50b1d7;
+  background-image: linear-gradient(-45deg, #1b92c1 0%, #50b1d7 100%);
+  text-align: center;
+  margin: 0 auto;
+  position: fixed;
+  top: 25%;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
+
+.successfully-sent h3 {
+  font-size: 30px;
+  line-height: 36px;
+  margin-top: 55px;
+  margin-bottom: 25px;
+}
+
+.successfully-sent p {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 130px;
+}
+
+.successfully-sent::before {
+  content: '';
+  position: absolute;
+  background: url('../img/successfully_sent.svg') no-repeat 0 0;
+  width: 62px;
+  height: 46px;
+  top: 260px;
+  left: 126px;
+}
+
+@media (min-width: 768px) {
+  .successfully-sent {
+     max-width: 600px;
+  }
+
+  .successfully-sent p {
+    padding: 0;
+  }
+
+  .successfully-sent::before {
+    top: 200px;
+    left: 255px;
+  }
+}

@@ -1,0 +1,64 @@
+.stiky-desktope {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .stiky-desktope {
+    display: none;
+  }
+}
+
+@media (min-width: 1290px) {
+  .stiky-desktope {
+    display: block;
+    background-color: #555555;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .stiky-desktope__wrapper {
+    width: 1290px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: #ffffff;
+  }
+
+  .stiky-desktope__logo {
+    margin-right: 67px;
+  }
+
+  .stiky-desktope__logo-image {
+    width: 91px;
+    height: 19px;
+  }
+
+  .stiky-desktope__site-list .site-list__item {
+    margin-right: 65px;
+  }
+
+  .stiky-desktope__callback {
+    font-size: 12px;
+  }
+
+  .stiky-desktope__callback a,
+  .stiky-desktope__tel span {
+    color: #50b1d7;
+  }
+
+  .stiky-desktope__callback a {
+    border-bottom: 1px solid #50b1d7;
+  }
+
+  .stiky-desktope__callback a:hover,
+  .stiky-desktope__site-list a:hover,
+  .stiky-desktope__tel span:hover {
+    color: #ffe640;
+  }
+}
