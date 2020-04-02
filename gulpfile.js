@@ -4,6 +4,8 @@ const del = require('del');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 const autoprefix = require('gulp-autoprefixer');
+var uglify = require("gulp-uglify");
+var csso = require('gulp-csso');
 
 function htmlBuild() {
   return gulp.src('src/*.html')
@@ -14,6 +16,7 @@ gulp.task('html', htmlBuild);
 
 gulp.task('scripts', function () {
   return gulp.src('src/js/plugins/*.js')
+    .pipe(uglify())
     .pipe(concat('lib.js'))
     .pipe(gulp.dest('build/js/'))
     .pipe(browserSync.stream());
@@ -26,6 +29,7 @@ gulp.task('clearBuild', function () {
 gulp.task('css', function () {
   return gulp.src('src/scss/*.scss')
     .pipe(sass().on('error', sass.logError))
+    .pipe(csso())
     .pipe(concat('style.css'))
     .pipe(autoprefix({
       overrideBrowserslist: ['last 2 versions'],
