@@ -7,3 +7,22 @@
   color: #ffe640;
   border-bottom: 1px solid #ffe640;
 }
+
+.checkbox__input {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+
+@media (min-width: 768px) {
+  .checkbox__input {
+    top: 10px;
+    left: -20px;
+  }
+}
+
+@media (min-width: 1290px) {
+  .checkbox__input {
+    left: -30px;
+  }
+}
