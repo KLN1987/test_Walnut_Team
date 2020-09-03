@@ -6,6 +6,7 @@ const browserSync = require('browser-sync').create();
 const autoprefix = require('gulp-autoprefixer');
 var uglify = require("gulp-uglify");
 var csso = require('gulp-csso');
+var imagemin = require('gulp-imagemin');
 
 function htmlBuild() {
   return gulp.src('src/*.html')
@@ -41,6 +42,7 @@ gulp.task('css', function () {
 
 gulp.task('img', function() {
   return gulp.src('src/img/**/*.*')
+      .pipe(imagemin())
       .pipe(gulp.dest('build/img/'));
 });
 
