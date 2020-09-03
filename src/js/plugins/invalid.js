@@ -1,19 +1,13 @@
-/*$('document').ready(function () {
-  $('.application__btn').on('click', function () {
-    $('input[required]').addClass('test');
-  });
-});*/
-
 var application = document.querySelector('.application__btn');
 var successfully = document.querySelector('.successfully-sent');
 var form = document.querySelector('.form');
 var popup = document.querySelector('.popup');
+var toggle = document.querySelector('.toggle');
 
 
 var validate = function() {
   var name = document.getElementById('name');
   var phone = document.getElementById('phone');
-  var toggle = document.querySelector('.toggle');
 
   if (name.value == "") {
     name.classList.add('test');
@@ -35,6 +29,7 @@ form.addEventListener('submit', function (evt) {
   evt.preventDefault();
   popup.classList.add('visually-hidden');
   successfully.classList.remove('visually-hidden');
+  toggle.classList.add("visually-hidden");
   form.reset();
 });
 

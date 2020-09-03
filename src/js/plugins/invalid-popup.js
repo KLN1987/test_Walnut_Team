@@ -1,11 +1,11 @@
 var successfully = document.querySelector('.successfully-sent');
 var popupBtn = document.querySelector('.popup__btn');
 var applicationForm = document.querySelector('.popup__form');
+var togglePopup = document.querySelector('.toggle-popup');
 
 var validateTwo = function() {
   var namePopup = document.getElementById('name-popup');
   var phonePopup = document.getElementById('phone-popup');
-  var togglePopup = document.querySelector('.toggle-popup');
   var popup = document.querySelector('.popup');
 
   if (namePopup.value == "") {
@@ -28,5 +28,6 @@ applicationForm.addEventListener('submit', function (evt) {
   evt.preventDefault();
   popup.classList.add('visually-hidden');
   successfully.classList.remove('visually-hidden');
+  togglePopup.classList.add("visually-hidden")
   applicationForm.reset();
 })
